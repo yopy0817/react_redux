@@ -1,4 +1,4 @@
-import * as types from '../action/ActionTypes';
+import * as types from '../actions/ActionTypes';
 
 //리듀스는 상수와, 함수를 전달받는다
 //초기값을 작성한다
