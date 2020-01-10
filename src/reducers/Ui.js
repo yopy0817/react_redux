@@ -7,12 +7,12 @@ const initialState = {
 };
 
 export default function ui(state = initialState, action) {
-    if(action.type === types.SET_COLOR) {
+    if(action.type === types.SET_COLOR) { //엑션이 컬러일 경우 변경해서 실행
         return {
             color: action.color
         };
         
-    } else {
+    } else { //Conter엑션일 경우는 그대로반환
         return state;
     }
 }

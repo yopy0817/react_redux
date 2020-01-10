@@ -1,4 +1,4 @@
-//default형식의 export가 아닌것을 불러오는 방법
+//export default가 아닌것을 불러오는 방법
 //1st
 //import { INCREMENT, DECREMENT, SET_COLOR } from './ActionTypes';
 
@@ -12,7 +12,7 @@ export function increment() {
 export function decrement() {
     return { type: types.DECREMENT};
 }
-export function setColor(color) {
+export function setColor(color) { //파라미터가 있습니다~
     return {
         type: types.SET_COLOR,
         color: color

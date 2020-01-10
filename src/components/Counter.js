@@ -34,13 +34,13 @@ class Counter extends React.Component {
     }
 }
 
-const mapStateToProps = (state) => { //redux의 state를 뜻한다
+const mapStateToProps = (state) => { //redux에서 관리하는 상태를 props로 매핑해준다
     return {
         number: state.counter.number,
         color: state.ui.color
     }
 }
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch) => { //reducer에 정의해둔 핸들러를 props로 매핑해준다
     return { //반환으로 객체를 보낸다 함수명 : () =>
         handleIncrement: () => {dispatch(actions.increment() )},
         handleDecrement: () => {dispatch(actions.decrement() )},

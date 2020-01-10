@@ -1,4 +1,4 @@
-import {combineReducers} from 'redux';
+import {combineReducers} from 'redux'; //합치기 기능 제공
 import counter from './Counter';
 import ui from './Ui';
 
